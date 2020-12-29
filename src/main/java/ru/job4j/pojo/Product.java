@@ -1,6 +1,7 @@
 package ru.job4j.pojo;
 
 public final class Product {
+
     private String name;
     private int price;
 
@@ -19,5 +20,9 @@ public final class Product {
 
     public String label() {
         return name + " " + price();
+    }
+
+    public String getName() {
+        return name;
     }
 }
