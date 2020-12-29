@@ -6,10 +6,9 @@ import java.time.format.DateTimeFormatter;
 public class StartUI {
 
     public static void main(String[] args) {
+        Tracker tracker = new Tracker();
         Item item = new Item();
-        DateTimeFormatter currentDateTimeFormat = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
-        LocalDateTime created = item.getCreated();
-        System.out.println(created.format(currentDateTimeFormat));
+        item = tracker.add(item);
+        System.out.println(tracker.findById(item.getId()));
     }
-
 }
