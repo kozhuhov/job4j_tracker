@@ -1,6 +1,10 @@
 package ru.job4j.pojo;
 
 public class Book {
+
+    private String name;
+    private int count;
+
     public Book(String name) {
         this.name = name;
         this.count++;
@@ -21,8 +25,5 @@ public class Book {
     public void setCount(int count) {
         this.count = count;
     }
-
-    private String name;
-    private int count;
 
 }
