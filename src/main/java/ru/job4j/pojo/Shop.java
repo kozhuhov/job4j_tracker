@@ -1,4 +1,4 @@
-package ru.job4j.oop.Inheritance;
+package ru.job4j.pojo;
 
 public class Shop {
     public static void main(String[] args) {
@@ -11,5 +11,15 @@ public class Shop {
             return new Product(name, price);
         }
         return new Product(name, price);
+    }
+
+    public static int indexOfNull(Product[] products) {
+        int rsl = -1;
+        for (int i = 0; i < products.length; i++) {
+            if (products[i] == null) {
+                return i;
+            }
+        }
+        return rsl;
     }
 }

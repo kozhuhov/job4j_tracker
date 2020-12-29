@@ -1,4 +1,4 @@
-package ru.job4j.oop.Inheritance;
+package ru.job4j.pojo;
 
 public final class Product {
     private String name;
