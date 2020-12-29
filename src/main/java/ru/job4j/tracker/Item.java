@@ -5,15 +5,14 @@ import java.time.LocalDateTime;
 public class Item {
     private int id;
     private String name;
-
-    public LocalDateTime getCreated() {
-        return created;
-    }
-
     private LocalDateTime created = LocalDateTime.now();
 
     public Item() {
 
+    }
+
+    public LocalDateTime getCreated() {
+        return created;
     }
 
     public Item(int id) {
