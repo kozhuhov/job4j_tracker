@@ -26,7 +26,7 @@ public class Library {
 
         for (int i = 0; i < books.length; i++) {
             Book currentBook = books[i];
-            if (currentBook.equals(four)) {
+            if (currentBook.getName() == "Clean code") {
                 System.out.println(currentBook.getName());
             }
         }
