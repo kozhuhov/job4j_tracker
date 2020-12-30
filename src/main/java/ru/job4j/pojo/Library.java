@@ -26,7 +26,7 @@ public class Library {
 
         for (int i = 0; i < books.length; i++) {
             Book currentBook = books[i];
-            if (currentBook.getName() == "Clean code") {
+            if (currentBook.getName().equals("Clean code")) {
                 System.out.println(currentBook.getName());
             }
         }
