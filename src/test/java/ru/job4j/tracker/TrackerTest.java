@@ -24,4 +24,15 @@ public class TrackerTest {
         Item[] rsl = tracker.findAll();
         Assert.assertEquals(1, rsl.length);
     }
+
+    @Test
+    public void whenOneItemFindByNameTurnOne() {
+        Item item1 = new Item();
+        item1.setName("Name1");
+        Tracker tracker = new Tracker();
+        tracker.add(item1);
+        Item[] expect = {item1};
+        Item[] rsl = tracker.findByName("Name1");
+        assertThat(rsl, is(expect));
+    }
 }
