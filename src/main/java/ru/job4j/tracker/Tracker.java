@@ -56,6 +56,7 @@ public class Tracker {
             int length = size - index;
             System.arraycopy(items, start, items, index, length);
             items[size - 1] = null;
+            size--;
         }
         return rsl;
     }
