@@ -62,11 +62,8 @@ public class Tracker {
 
     private int indexOf(int id) {
         int rsl = -1;
-        for (int index = 0; index <= size; index++) {
+        for (int index = 0; index < size; index++) {
             Item currentItem = items[index];
-            if (currentItem == null) {
-                continue;
-            }
             if (items[index].getId() == id) {
                 rsl = index;
                 break;
