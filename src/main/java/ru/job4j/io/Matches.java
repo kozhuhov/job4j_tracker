@@ -13,6 +13,10 @@ public class Matches {
             playerNumber = isFirst ? "1" : "2";
             System.out.println("Игрок № " + playerNumber + " делает ход:");
             int select = Integer.valueOf(input.nextLine());
+            if (select == 0 || select > 3) {
+                System.out.println("Введено недопустимое число.");
+                continue;
+            }
             count = count - select;
             System.out.println("На столе осталось " + count + " спичек");
             isFirst = !isFirst;
