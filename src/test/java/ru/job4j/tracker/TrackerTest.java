@@ -64,9 +64,10 @@ public class TrackerTest {
     @Test
     public void whenAddItem() {
         String[] answers = {"Fix PC"};
+        Output out = new StubOutput();
         Input input = new StubInput(answers);
         Tracker tracker = new Tracker();
-        new CreateAction().execute(input, tracker);
+        new CreateAction(out).execute(input, tracker);
         Item created = tracker.findAll()[0];
         Item expected = new Item("Fix PC");
         assertThat(created.getName(), is(expected.getName()));
