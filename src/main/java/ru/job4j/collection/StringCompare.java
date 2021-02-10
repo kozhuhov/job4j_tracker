@@ -15,9 +15,9 @@ public class StringCompare implements Comparator<String> {
             char c1 = o1.charAt(index);
             char c2 = o2.charAt(index);
             if (c1 != c2) {
-                return c1 - c2;
+                return Character.compare(c1, c2);
             }
         }
-        return len1 - len2;
+        return Integer.compare(len1, len2);
     }
 }
