@@ -27,7 +27,7 @@ public class NotifyAccountTest {
     }
 
     @Test
-    public void WhenDuplicatesent() {
+    public void whenDuplicatesent() {
         List<Account> accounts = Arrays.asList(
                 new Account("123", "Petr Arsentev", "eDer3432f"),
                 new Account("123", "Petr Arsentev", "000001")

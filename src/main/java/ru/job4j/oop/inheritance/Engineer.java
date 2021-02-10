@@ -1,8 +1,8 @@
-package ru.job4j.oop.Inheritance;
+package ru.job4j.oop.inheritance;
 
 import java.util.Date;
 
-public class Engineer extends Profession{
+public class Engineer extends Profession {
 
     private boolean hasCertificate;
 

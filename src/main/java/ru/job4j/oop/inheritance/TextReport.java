@@ -1,4 +1,4 @@
-package ru.job4j.oop.Inheritance;
+package ru.job4j.oop.inheritance;
 
 public class TextReport {
     public String generate(String name, String body) {

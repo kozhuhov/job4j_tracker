@@ -1,4 +1,4 @@
-package ru.job4j.oop.Inheritance;
+package ru.job4j.oop.inheritance;
 
 import ru.job4j.pojo.Product;
 
