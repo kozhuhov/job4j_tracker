@@ -2,6 +2,11 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает пользователя банковского сервиса
+ * @author Dmitry Kozhukhov
+ * @version 1.0
+ */
 public class User {
     private String passport;
     private String username;
@@ -11,18 +16,32 @@ public class User {
         this.username = username;
     }
 
+    /**
+     * Метод возвращает паспортные данные пользователя
+     * @return возвращает строковое представление паспортных данных
+     */
     public String getPassport() {
         return passport;
     }
 
+    /**
+     * Метод записывает паспортные данные пользователя
+     */
     public void setPassport(String passport) {
         this.passport = passport;
     }
 
+    /**
+     * Метод возвращает имя пользователя
+     * @return возвращает строку с именем пользователя
+     */
     public String getUsername() {
         return username;
     }
 
+    /**
+     * Метод записывает имя пользователя
+     */
     public void setUsername(String username) {
         this.username = username;
     }
