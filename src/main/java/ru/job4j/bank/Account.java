@@ -8,7 +8,13 @@ import java.util.Objects;
  * @version 1.0
  */
 public class Account {
+    /**
+     * банковские реквизиты
+     */
     private String requisite;
+    /**
+     * баланс счета
+     */
     private double balance;
 
     public Account(String requisite, double balance) {

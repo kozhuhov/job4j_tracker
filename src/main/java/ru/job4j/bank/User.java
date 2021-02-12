@@ -8,7 +8,13 @@ import java.util.Objects;
  * @version 1.0
  */
 public class User {
+    /**
+     * паспортные данные
+     */
     private String passport;
+    /**
+     * имя пользователя
+     */
     private String username;
 
     public User(String passport, String username) {
